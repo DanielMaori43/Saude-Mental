@@ -1,0 +1,17 @@
+img{
+    max-width: 100%;  /* A imagem nunca ultrapassará a largura do container */
+    height: auto;     /* A altura da imagem se ajusta proporcionalmente */
+    width: 500px;     /* Defina uma largura inicial, mas ela pode ser redimensionada */
+    max-height: 300px; /* Define um limite de altura para a imagem */
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ajusta o tamanho do container para a largura total */
+    height: 100vh; /* Ajusta a altura do container para ocupar a altura da tela */
+    position: relative;
+  
+}
+
+

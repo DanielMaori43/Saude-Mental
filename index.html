@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde Mental e Assédio Moral nas Empresas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="/Saude Mental/imagem/logo.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="leis.html">Leis de Proteção mental</a></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Bem-vindo ao nosso site sobre Saúde Mental</h1>
+            <p>Este é um espaço dedicado a discutir diversos problemas de saúde mental, com foco especial no assédio moral nas empresas e seus impactos na saúde dos colaboradores.</p>
+        </section>
+
+        <section id="TDAH">
+            <h2>TDAH <button class="saiba-mais" onclick="window.location.href='tdah.html'">Saiba mais</button></h2>
+            <p>O Transtorno do Déficit de Atenção com Hiperatividade (TDAH) é um transtorno neurobiológico, de causas genéticas...</p>
+        </section>
+        <section id="Autismo">
+            <h2>Autismo<button class="saiba-mais" onclick="window.location.href='Autismo.html'">Saiba mais</button></h2>
+            <p>O Transtorno do Espectro Autista (TEA) não é uma coisa só. </p>
+        </section>
+        <section id="depressao">
+            <h2>Depressão <button class="saiba-mais" onclick="window.location.href='depressão.html'">Saiba mais</button></h2>
+            <p>A depressão é um transtorno mental que afeta milhões de pessoas em todo o mundo...</p>
+        </section>
+
+        <section id="esquizofrenia">
+            <h2>Esquizofrenia <button class="saiba-mais" onclick="window.location.href='esquizofrenia.html'">Saiba mais</button></h2>
+            <p>A esquizofrenia é um transtorno psicótico crônico que impacta a forma como uma pessoa pensa, sente e se comporta...</p>
+        </section>
+
+        <section id="narcisismo">
+            <h2>Narcisismo <button class="saiba-mais" onclick="window.location.href='Narcisismo.html'">Saiba mais</button></h2>
+            <p>O transtorno de personalidade narcisista é caracterizado por um padrão de grandiosidade...</p>
+        </section>
+
+        <section id="assedio">
+            <h2>Assédio Moral nas Empresas <button class="saiba-mais" onclick="window.location.href='Assedio.html'">Saiba mais</button></h2>
+            <p>O assédio moral no ambiente de trabalho é um problema sério que pode causar danos significativos à saúde mental. Vamos entender melhor como ele se manifesta e os efeitos que pode ter na vida de um trabalhador.</p>
+            
+            <h3>Simulação Interativa: Identificando o Assédio Moral</h3>
+            <p>Leia o cenário a seguir e escolha a melhor resposta para ajudar o funcionário a lidar com a situação:</p>
+
+            <div id="scenario">
+                <p><strong>Cenário:</strong> João, um funcionário dedicado, tem sido constantemente criticado de forma pública pelo seu chefe, que o faz sentir-se inferior perante os colegas. Ele já não se sente confortável em ir ao trabalho e está começando a demonstrar sinais de estresse. Como você reagiria?</p>
+                
+                <div id="choices">
+                    <button onclick="chooseAction('A')">Falar diretamente com o chefe, explicando como isso o afeta.</button>
+                    <button onclick="chooseAction('B')">Fazer de conta que nada está acontecendo, para evitar mais problemas.</button>
+                    <button onclick="chooseAction('C')">Conversar com um colega de trabalho para ver se ele tem a mesma impressão.</button>
+                </div>
+                <div id="feedback"></div>
+                
+                <!-- Painéis -->
+                <div id="comic">
+                    <!-- Painel 1 -->
+                    <div class="panel" id="panel1">
+                        <img src="/Saude Mental/imagem/acessedio6.jfif" alt="Assédio Moral - Quadro 1">
+                        <p><strong>Joana, é constantemente criticado em frente aos colegas.</strong></p>
+                        <button onclick="nextPanel(2)">Avançar</button>
+                    </div>
+
+                    <!-- Painel 2 -->
+                    <div class="panel" id="panel2">
+                        <img src="/Saude Mental/imagem/assedio9.jfif" alt="Assédio Moral - Quadro 2">
+                        <p><strong>Joana se sente envergonhada e começa a duvidar de sua capacidade.</strong></p>
+                        <button onclick="nextPanel(3)">Avançar</button>
+                    </div>
+
+                    <!-- Painel 3 -->
+                    <div class="panel" id="panel3">
+                        <img src="/Saude Mental/imagem/assedio 8.webp" alt="Assédio Moral - Quadro 3">
+                        <p><strong>Ela começa a se sentir isolada e desmotivada a ir trabalhar.</strong></p>
+                        <button onclick="nextPanel(4)">Avançar</button>
+                    </div>
+
+                    <!-- Painel 4 -->
+                    <div class="panel" id="panel4">
+                        <img src="/Saude Mental/imagem/ajuda.jpg" alt="Assédio Moral - Quadro 4">
+                        <p><strong>Joana decide procurar ajuda e conversar com seu chefe sobre a situação.</strong></p>
+                        <button onclick="nextPanel(5)">Avançar</button>
+                    </div>
+
+                    <!-- Painel 5 (final) -->
+                    <div class="panel" id="panel5">
+                        <img src="/Saude Mental/imagem/respeitosa.webp" alt="Assédio Moral - Quadro 5">
+                        <p><strong>Após o diálogo, o chefe percebe seu erro e começa a agir de maneira mais respeitosa.</strong></p>
+                        <button onclick="resetStory()">Recomeçar a história</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <html>
+<body>
+    <div class="whatsapp">
+<a href="https://api.whatsapp.com/send?l=pt&amp;phone=553499472820"><img 
+src="/Saude Mental/imagem/whatsapp.png" style="width: 80px; height:64px; bottom: 25px; right: 
+25px; z-index:99999;" data-selector="img"></a>
+</body>
+</div>
+</html>
+
+    <footer>
+        <p>© 2025 Saúde Mental e Assédio Moral</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="//code.tidio.co/vh3dkuffidt2wrw68z3vzynw9w30beac.js" async></script>
+    <script>
+        // Funções de interatividade
+        let currentPanel = 1;
+
+        function nextPanel(panelNumber) {
+            // Esconde o painel atual
+            document.getElementById(`panel${currentPanel}`).style.display = 'none';
+            // Exibe o próximo painel
+            document.getElementById(`panel${panelNumber}`).style.display = 'block';
+            // Atualiza o painel atual
+            currentPanel = panelNumber;
+        }
+
+        function resetStory() {
+            // Esconde todos os painéis
+            for (let i = 1; i <= 5; i++) {
+                document.getElementById(`panel${i}`).style.display = 'none';
+            }
+            // Exibe o primeiro painel
+            document.getElementById('panel1').style.display = 'block';
+            currentPanel = 1;
+        }
+
+        // Inicializa o primeiro painel
+        document.getElementById('panel1').style.display = 'block';
+    </script>
+</body>
+</html>

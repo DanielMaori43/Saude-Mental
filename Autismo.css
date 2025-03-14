@@ -1,0 +1,143 @@
+body {
+    background-color: #0d89dbe4;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: black;
+}
+
+h5 {
+    margin-top: 20px;
+    color: white;
+    font-size: 1.5em;  /* Ajuste a fonte com um valor fixo em vez de unidades relativas */
+}
+
+p {
+    font-size: 1em;
+}
+h4 {
+    color: white;
+    font-size: 25px; /* Fonte de 8px para h5 */
+    text-decoration: underline;
+    
+}
+
+div {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+    flex-wrap: wrap;  /* Adiciona wrap para permitir que as colunas se ajustem em telas menores */
+}
+.fotoaut{
+    /* border: solid 2px blue; */
+    margin-bottom: 2px;
+    box-shadow: 2px 2px 22px blue; /* sombra com deslocamento de 10px, desfoque de 15px e cor preta com opacidade */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+    }
+
+
+.fotoaut:hover {
+    transform: translateY(-5px); /* Move a imagem para cima para simular um clique */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra para dar a sensação de elevação */
+}
+.fotoaut:active {
+    transform: translateY(5px); /* A imagem desce ligeiramente ao ser clicada, dando sensação de "pressionada" */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra mais suave quando pressionada */
+}
+
+
+.tea {
+    border: solid 2px blue;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 450px;
+    width: 100%;
+    max-width: 750px;  /* Limita a largura para a div tea */
+    margin-bottom: 20px;
+}
+
+.tea2 {
+    border: solid 2px blue;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    height: 350px;
+    width: 100%;
+    max-width: 600px;  /* Limita a largura para a div tea2 */
+    margin-bottom: 20px;
+   
+}
+
+img {
+   
+    width: 100%;
+    max-width: 450px;  /* Limita a largura da imagem */
+    height: auto;  /* Mantém a proporção da imagem */
+}
+
+footer{
+    margin-top: 50px;
+}
+
+.transtorno p, .transtorno h1 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h5 {
+        font-size: 1.2em; /* Ajuste da fonte para telas menores */
+    }
+
+    p {
+        font-size: 1em; /* Ajuste da fonte para telas menores */
+    }
+
+    div {
+        gap: 20px;  /* Reduz o espaço entre as divs em telas menores */
+    }
+
+    .tea, .tea2 {
+        width: 90%;  /* Aumenta a largura das divs em telas menores */
+        height: auto;  /* Deixa a altura automática para se ajustar ao conteúdo */
+    }
+
+    img {
+        max-width: 90%; /* Ajusta a largura da imagem */
+    }
+}
+
+@media (max-width: 480px) {
+    h5 {
+        font-size: 1em;  /* Fonte ajustada para telas muito pequenas */
+    }
+
+    p {
+        font-size: 0.9em;  /* Fonte ajustada para telas muito pequenas */
+    }
+
+    div {
+        flex-direction: column;  /* Organiza as divs verticalmente */
+        gap: 10px;  /* Reduz o espaço entre as divs */
+    }
+
+    .tea, .tea2 {
+        width: 100%;  /* A largura das divs ocupa 100% da tela */
+        height: auto;  /* Ajuste para altura automática */
+    }
+
+    img {
+        max-width: 100%;  /* Imagem ocupa toda a largura disponível */
+    }
+}

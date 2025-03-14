@@ -1,0 +1,30 @@
+
+
+
+
+
+h3{
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Helvetica, sans-serif;
+}
+.ajuda {
+    display: flex; /* Ativa o flexbox */
+    flex-direction: column;
+    justify-content: center; /* Alinha horizontalmente no centro */
+    align-items: center; /* Alinha verticalmente no centro */
+    background-color: antiquewhite;
+    width: 400px; /* Largura fixa para a div */
+    height: 500px; /* Altura da div, para que o conteúdo possa ser centralizado */
+    margin: 0 auto; /* Garante que a div fique centralizada na página */
+    font-size: 15px;
+    padding: 16px 16px;
+    box-shadow: 2px 2px 22px black; /* sombra com deslocamento de 10px, desfoque de 15px e cor preta com opacidade */
+    margin-top: 60px;
+    margin-bottom: 50px;
+
+
+}

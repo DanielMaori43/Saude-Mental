@@ -1,0 +1,133 @@
+/* Definir o background color */
+body {
+    background-color: #adaec0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Definir as propriedades de h5 */
+h5 {
+    color: black;
+    font-size: 25px; /* Fonte de 8px para h5 */
+}
+h4 {
+    color: white;
+    font-size: 25px; /* Fonte de 8px para h5 */
+    text-decoration: underline;
+    
+}
+
+/* Definir as propriedades de p */
+p {
+    font-size: 12px; /* Fonte de 8px para p */
+}
+
+/* Responsividade do container div */
+div {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 5vw; /* Usando um gap mais equilibrado */
+    font-size: 12px; /* Fonte de 8px para div */
+    text-align: center;
+    border-radius: 5px;
+    flex-wrap: wrap; /* Permite o ajuste do layout em telas menores */
+}
+
+/* Responsividade da classe .tdah */
+.tdah {
+    background-color: white;
+    border: solid 5px yellow;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 100%;
+    box-sizing: border-box; /* Para garantir que a largura total seja usada sem quebra */
+}
+
+/* Responsividade da imagem */
+img {
+    
+    margin-top: 20px;
+    width: 50%; /* Imagem redimensionada */
+    max-width: 250px; /* Largura máxima */
+    height: auto;
+}
+div img{
+    
+  box-shadow: 3px 3px 20px orange; 
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+}
+
+
+div img:hover {
+    transform: translateY(-10px); /* Move a imagem para cima para simular um clique */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra para dar a sensação de elevação */
+}
+div img:active {
+    transform: translateY(5px); /* A imagem desce ligeiramente ao ser clicada, dando sensação de "pressionada" */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra mais suave quando pressionada */
+}
+
+
+
+/* Responsividade do conteúdo da classe .transtorno */
+.transtorno p, h1 {
+    border: solid 2px blue;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 12px; /* Fonte de 8px para p e h1 */
+}
+
+/* Responsividade do conteúdo da classe .TDAH */
+.TDAH {
+    border: solid 5px yellow;
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+/* Media queries para diferentes tamanhos de tela */
+
+/* Para telas pequenas (smartphones) */
+@media (max-width: 768px) {
+    h5 {
+        font-size: 8px; /* Fonte fixa de 8px */
+    }
+
+    p {
+        font-size: 8px; /* Fonte fixa de 8px */
+    }
+
+    div {
+        gap: 5vw;
+        font-size: 8px; /* Fonte fixa de 8px */
+        flex-direction: column;
+    }
+
+    .tdah {
+        height: auto;
+    }
+
+    img {
+        width: 80%;
+    }
+}
+
+/* Para telas grandes (tablets, desktops) */
+@media (min-width: 1024px) {
+    div {
+        gap: 30px;
+        font-size: 8px; /* Fonte fixa de 8px */
+    }
+
+    .tdah {
+        height: 300px;
+    }
+}
